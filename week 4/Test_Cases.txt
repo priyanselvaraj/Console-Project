@@ -1,0 +1,33 @@
+BANKING MANAGEMENT SYSTEM - WEEK 4 TEST CASES
+
+TC01 - Create Account
+Input: Account ID 105, Arun, 5000
+Expected: Account created successfully.
+
+TC02 - Duplicate Account
+Input: Account ID 105 again
+Expected: Account ID already exists.
+
+TC03 - Deposit
+Input: Account ID 105, Deposit 1000
+Expected balance: 6000.
+
+TC04 - Withdraw
+Input: Account ID 105, Withdraw 1500
+Expected balance: 4500.
+
+TC05 - Excess Withdrawal
+Input: Account ID 105, Withdraw 5000
+Expected: Invalid amount or insufficient balance.
+
+TC06 - Balance Check
+Input: Account ID 105
+Expected: Balance 4500.
+
+TC07 - Sorted Ledger
+Create IDs in this order: 105, 101, 110.
+Expected sorted output: 101, 105, 110.
+
+TC08 - Restart
+Close and run the program again.
+Expected: Previous accounts are not present because Week 4 uses in-memory TreeMap storage.
